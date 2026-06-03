@@ -91,5 +91,33 @@ Building autonomous robotics stack from scratch — NVIDIA Jetson platform bring
 - **GRAIC Autonomous Racing** (2023) — 40.8% lap time improvement on Shanghai circuit using Hybrid A* planner + PD controller
 - **IGVC Team DARVIN** (2019–2023) — Co-Captain; 2nd Cyber Challenge (2023), 3rd Auto-Nav (2022); built SOCRATES 2.0 on ROS with Velodyne LiDAR, OpenCV, GPS, ODrive
 
+### Side Projects
+- **Satellite Image Domain Adaptation** (2024) — FastCUT (contrastive unpaired translation) for building segmentation across WHU-Building and Inria Aerial datasets without paired data. Stack: Python, PyTorch, FastCUT, MMSegmentation. [GitHub](https://github.com/Vaibhav-Raheja/Domain-Adaptation-using-Satellite-Images)
+- **Robotis Mini ROS Control** (2023) — ROS simulation and control stack for humanoid from scratch: joint control, motion planning, sim-to-hardware gap. Stack: ROS, Python. [GitHub](https://github.com/Vaibhav-Raheja/Robotis_Mini)
+- **Skin Disease Detection** (2022) — CNN classifier on dermatoscopic images; full preprocessing-to-validation pipeline. Stack: Python, TensorFlow. [GitHub](https://github.com/Vaibhav-Raheja/Skin-Disease-Detection)
+- **Autonomy Mini-Projects** (2023–2024) — EKF trajectory estimation, particle filter localization, SLAM, RTAB-Map 3D mapping, lane detection — each implemented from scratch. Stack: Python, ROS, OpenCV. [GitHub](https://github.com/Vaibhav-Raheja/Mini-Projects)
+
 ### Publications
 V. Raheja, V. Shah, M. Shetty, and P. Patel, "Multi-Disease Prediction System using Machine Learning," INCOFT 2022. DOI: 10.1109/INCOFT55651.2022.10094382
+
+## Career goals
+
+- **Target roles:** Humanoid robotics (Atlas-class, legged systems, manipulation)
+- **Dream employers:** Boston Dynamics, Tesla Bot team
+- **Not pursuing:** PhD (decided Apr 2026 — industry-focused)
+- **Current role rationale:** SF base, equity, H-1B sponsorship — deliberate launchpad toward humanoid robotics
+
+## Personal
+
+- Originally from Mumbai, India
+- Origin spark: heard "To err is human, to whirr, is robot" at age 8 → R2D2, Optimus Prime, then Lego EV3
+- National-level roller hockey player
+- Outside work: F1 (deep into tyre strategy, undercuts, race craft), tennis, driving, beach, genuinely enjoys networking
+- Cares about: logging, reproducibility, failure modes, maintainable interfaces, the handoff from prototype to deployed system
+
+## Working style (for resume writing)
+
+- Resume bullets follow XYZ format: **Achieved X by doing Y, measured by Z**
+- Prefers dense, direct language — no filler verbs
+- Build-first engineer; AI-assisted (Claude, Cursor); iterates fast
+- Avoid solo-credit framing on team work unless genuinely solo
