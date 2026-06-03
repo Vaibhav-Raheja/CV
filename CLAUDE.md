@@ -115,9 +115,20 @@ V. Raheja, V. Shah, M. Shetty, and P. Patel, "Multi-Disease Prediction System us
 - Outside work: F1 (deep into tyre strategy, undercuts, race craft), tennis, driving, beach, genuinely enjoys networking
 - Cares about: logging, reproducibility, failure modes, maintainable interfaces, the handoff from prototype to deployed system
 
+## Session learnings
+
+At the end of every session, update CLAUDE.md with any new preferences, corrections, or context learned. Commit with "Update resume".
+
 ## Working style (for resume writing)
 
 - Resume bullets follow XYZ format: **Achieved X by doing Y, measured by Z**
 - Prefers dense, direct language — no filler verbs
 - Build-first engineer; AI-assisted (Claude, Cursor); iterates fast
 - Avoid solo-credit framing on team work unless genuinely solo
+- Never add metrics or claims he can't back up in an interview (e.g. skipped CPU optimization metrics because he had no real numbers)
+- Always ask before making changes — show proposed wording first, get approval, then edit
+- No em dashes in resume text
+- No double dashes except in LaTeX date ranges (e.g. 43--46°C)
+- Always send PDF directly, not a GitHub Pages link (repo has no Pages setup)
+- TerraWise work is all in progress — use present participles, not past tense
+- The EarthSense-to-TerraWise transition context in bullet 1 is intentional — shows continuity, keep it
