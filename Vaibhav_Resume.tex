@@ -10,14 +10,14 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 
-\linespread{0.85}
+\linespread{0.83}
 
 \definecolor{nameblue}{RGB}{31, 73, 125}
 
 \hypersetup{colorlinks=true, urlcolor=black, hidelinks}
 
 \titleformat{\section}{\bfseries\normalsize}{}{0em}{\uppercase}[\vspace{-3pt}\rule{\linewidth}{0.4pt}]
-\titlespacing{\section}{0pt}{5pt}{2pt}
+\titlespacing{\section}{0pt}{4pt}{1pt}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
@@ -35,7 +35,7 @@
 
 %--- HEADER ------------------------------------------------------------------
 \begin{center}
-  {\Large\bfseries\color{nameblue} Vaibhav Raheja}\\[2pt]
+  {\Large\bfseries\color{nameblue} Vaibhav Raheja}\\[1pt]
   \small
   \faEnvelope\enspace\href{mailto:vaibhavvraheja@gmail.com}{vaibhavvraheja@gmail.com}
   \quad\faMapMarker*\enspace San Francisco, CA
@@ -47,25 +47,25 @@
 
 %--- PROFESSIONAL SUMMARY ----------------------------------------------------
 \section{Professional Summary}
-Robotics Systems Engineer with 2+ years building hardware-software interfaces and deploying autonomous platforms on embedded compute. Experienced integrating sensor drivers and ROS2 layers for LiDAR, cameras, and embedded devices on NVIDIA Jetson. Demonstrated results: 90\% fleet uptime, 40\% improvement in hardware fault detection, and production deployments across multi-sensor stacks in safety-critical field environments.
+Robotics Software Engineer with 2+ years building and deploying autonomous platforms across hardware-software architecture, multi-sensor perception, and production field operations. Strong across ROS2-based autonomy, multi-sensor fusion (LiDAR, thermal, PTZ), and full-stack robotics infrastructure, with field-proven results achieving 90\% uptime and 40\% improvement in fault detection rates.
 
 %--- WORK EXPERIENCE ---------------------------------------------------------
 \section{Work Experience}
 
 \workheader{TerraWise Solutions, Inc}{Founding Engineer}{Mar 2026 – Present $|$ San Francisco, CA}
 \begin{itemize}[leftmargin=1.2em, topsep=2pt, itemsep=0pt, parsep=0pt]
-  \item Leading platform bring-up on NVIDIA Jetson: integrating ODrive motor controllers via CAN bus and establishing ROS2 driver interfaces from scratch.
-  \item Defining hardware-software integration standards and Docker deployment workflows, enabling reproducible embedded deployments across robot units.
-  \item Implementing LiDAR-based stop-by-obstacle detection as part of the autonomous navigation safety layer.
+  \item Building TerraWise's autonomous robotics stack from scratch, establishing ROS2 architecture and Docker deployment workflows following an internal transition from EarthSense.
+  \item Defining hardware-software standards and foundational perception pipelines, drawing on multi-sensor integration and field deployment experience from Solarbot.
+  \item Migrating the full platform to NVIDIA Jetson, integrating ODrive motor controllers, and implementing LiDAR-based stop-by-obstacle detection.
 \end{itemize}
 
 \workheader{EarthSense, Inc}{Robotics Engineer / Project Lead}{Aug 2024 – Mar 2026 $|$ Champaign, USA}
 \begin{itemize}[leftmargin=1.2em, topsep=2pt, itemsep=0pt, parsep=0pt]
-  \item Authored driver interfaces integrating Hesai LiDAR, PTZ cameras, and Seek thermal sensors into the ROS2 production stack across 3+ multi-site robot units.
-  \item Built real-time hardware health monitoring and telemetry pipelines, achieving 40\% improvement in fault detection rates and 90\% fleet uptime.
-  \item Shipped 35+ PRs across the motion control and autonomy stack in C++ and Python; stress-tested hardware at 40°C+ across multiple solar farm field deployments.
-  \item Enabled low-latency teleoperation via an AWS Kinesis WebRTC proof of concept for remote fleet monitoring.
-  \item Led a cross-functional team of 8+ engineers delivering an autonomous solar panel inspection platform across production solar farm deployments.
+  \item Led a cross-functional Solarbot team of 8+ engineers to deliver an autonomous solar panel inspection system across 3+ multi-site robot units.
+  \item Redesigned the C++ motion controller safety state machine to detect zero-radius turns, enforce a full-stop intermediary between drive modes, and add configurable RPM ramp up/down, fixing misdetection bugs and hardening stop logic for field safety.
+  \item Shipped 35+ PRs across the Python/C++ stack spanning motor control, per-motor RPM/current telemetry, camera bringup, and ARM64/Jetson platform deployment, all validated on a HIL rig I designed and built.
+  \item Built a low-latency teleoperation system using AWS Kinesis WebRTC (UDP-based video transport) and WebSocket over TCP for command/control, enabling real-time remote monitoring of field robots.
+  \item Integrated multi-sensor perception stacks (Hesai/Unitree LiDAR, PTZ cameras, Seek thermal, RealSense) into production via ROS2 and Docker, stress-tested across solar farm deployments in 43--46°C conditions.
 \end{itemize}
 
 \workheader{Intelligent Motion Laboratory}{Robotics Research Developer}{Aug 2023 – Dec 2023 $|$ Champaign, USA}
@@ -84,6 +84,7 @@ Robotics Systems Engineer with 2+ years building hardware-software interfaces an
 \section{Skills}
 \textbf{Programming:} Python, C++, ROS/ROS2, OpenCV, PyTorch, Machine Learning (ML), CNNs \newline
 \textbf{Robotics \& Perception:} LiDAR Integration (Hesai), Multi-Sensor Fusion, Camera Calibration, Path Planning, Motion Planning, Control Algorithms, Reinforcement Learning, Gazebo, SLAM, Docker \newline
+\textbf{Networking \& Protocols:} TCP/IP, UDP, WebSocket, WebRTC, CAN, Serial Communication \newline
 \textbf{Tools:} Linux, Git, Fusion 360, CAD, Arduino, Raspberry Pi, 3D Printing
 
 %--- PROJECTS ----------------------------------------------------------------
@@ -95,18 +96,16 @@ Robotics Systems Engineer with 2+ years building hardware-software interfaces an
   \item Verified real-world RL controller performance by deploying ``Walk These Ways'' on a physical Go1 across grass, gravel, and inclines.
 \end{itemize}
 
-\vspace{1pt}
 \projheader{GRAIC Autonomous Racing}{Python, Hybrid A*, Path Planning, PD Control, Vehicle Dynamics $|$ 2023}
 \begin{itemize}[leftmargin=1.2em, topsep=2pt, itemsep=0pt, parsep=0pt]
   \item Achieved 40.8\% lap time improvement on the Shanghai circuit using a Hybrid A* path planner tuned to vehicle kinematics and non-holonomic dynamics.
   \item Benchmarked three algorithms (Hybrid A*, Dynamic Programming, Spline Interpolation) and tuned a PD controller for steering and velocity.
 \end{itemize}
 
-\vspace{1pt}
 \projheader{Intelligent Ground Vehicle Competition (IGVC), Team DARVIN}{Python, ROS, OpenCV, ODrive, Velodyne LiDAR, Gazebo $|$ 2019--2023}
 \begin{itemize}[leftmargin=1.2em, topsep=2pt, itemsep=0pt, parsep=0pt]
   \item Served as Co-Captain, securing 2nd in the Cyber Challenge (2023) and 3rd in the Auto-Nav Challenge (2022) against 15+ international university teams.
-  \item Developed SOCRATES 2.0 on ROS with Velodyne LiDAR avoidance, OpenCV lane detection, GPS navigation, and ODrive S1 motor control for the competition.
+  \item Developed SOCRATES 2.0 on ROS with Velodyne LiDAR avoidance, OpenCV lane detection, GPS navigation, and ODrive S1 motor control, Gazebo-validated and field-deployed.
 \end{itemize}
 
 %--- EDUCATION ---------------------------------------------------------------
@@ -115,7 +114,7 @@ Robotics Systems Engineer with 2+ years building hardware-software interfaces an
 \textbf{University of Illinois Urbana-Champaign} \hfill Aug 2023 – Dec 2024 $|$ Champaign, USA\\
 \textit{Master of Engineering in Autonomy and Robotics}
 
-\vspace{2pt}
+\vspace{1pt}
 \textbf{Mukesh Patel School of Technology Management \& Engineering} \hfill Jul 2019 – Jun 2023 $|$ Mumbai, India\\
 \textit{Bachelor of Technology in Computer Engineering}
 
