@@ -45,7 +45,7 @@ Single-file LaTeX resume. All content lives in `Vaibhav_Resume.tex`; compiled ou
 
 - Branch: `main` is the only branch
 - `.gitignore` excludes `*.ini` files
-- Commit style is short and descriptive: `"edit"`, `"Edits"`, `"Fix links and tighten spacing"`
+- Always use `"Update resume"` as the commit message, no exceptions.
 
 ## User profile
 
